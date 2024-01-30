@@ -1,2 +1,9 @@
-# ts-template
-Template pour les applications TypeScript
+# Lancer l'application
+
+Afin de lancer l'application, il faut exécuter les commandes suivantes :
+
+```
+npm install
+npm run build
+npm run start
+```
