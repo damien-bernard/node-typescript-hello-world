@@ -1,0 +1,38 @@
+{
+  "name": "@damnard/node-typescript-hello-world",
+  "version": "0.0.1",
+  "description": "Exemple d'application Node.js avec TypeScript",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "tsc --build",
+    "start": "node dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "keywords": [
+    "node",
+    "typescript",
+    "hello-world"
+  ],
+  "author": "Damien Bernard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damien-bernard/node-typescript-hello-world.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
