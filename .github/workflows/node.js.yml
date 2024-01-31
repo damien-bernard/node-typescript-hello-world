@@ -2,13 +2,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "develop" ]
+    branches: ['develop']
   pull_request:
-    branches: [ "develop" ]
+    branches: ['develop']
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -18,4 +17,5 @@ jobs:
         with:
           node-version: '21.4'
       - run: npm ci
+      - run: npm run lint
       - run: npm run build

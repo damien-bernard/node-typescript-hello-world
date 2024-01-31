@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.log("Hello World!");
+function print(message: string): void {
+  console.log(message)
+}
+
+print('Hello World!')
